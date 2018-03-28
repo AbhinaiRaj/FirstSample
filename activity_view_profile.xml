@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.mobicloudstashitnownew.activities.ViewProfile">
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="@dimen/profile_width"
+        android:layout_height="@dimen/profile_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:src="@drawable/profile_image"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/et_pwd"
+        android:layout_alignStart="@+id/et_pwd"
+        android:layout_below="@+id/img_profile"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button_border"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="anil26765@gmail.com"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/button_border"
+        android:ems="10"
+        android:hint="Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="15dp"
+        android:layout_below="@+id/et_email"/>
+
+    <Button
+        android:id="@+id/but_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:text="Update"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:fontFamily="@string/font_family_medium"
+        android:background="#FFF45A43"
+        android:layout_below="@+id/et_pwd"/>
+
+</RelativeLayout>
